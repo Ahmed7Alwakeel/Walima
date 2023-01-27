@@ -1,0 +1,31 @@
+.swiper-arrows-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    width: 100vw;
+    padding-inline-start: 0 !important;
+    .swiper-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      color: black;
+      border: 2px solid rgba($color: black, $alpha: 0.1);
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+  }
+  @media(min-width : 1025px){
+    .swiper-arrows-container {
+      width: unset;
+       justify-content: flex-end;
+        padding-top: 2rem;
+        padding-inline-end: 0 ;
+      }
+  }

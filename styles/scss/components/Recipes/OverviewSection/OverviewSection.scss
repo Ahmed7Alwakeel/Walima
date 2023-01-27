@@ -1,0 +1,179 @@
+.recipe-overview-section {
+  .insideLyr {
+    background: linear-gradient(180deg, #0dd2c3 0%, #0f877b 100%);
+    padding-bottom: 8rem;
+    padding-top: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .overview-section-header {
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+        gap: 1.5rem;
+  
+        h1 {
+          font-family: "fiber-vintage";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 3.75rem;
+          line-height: 2rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        span {
+          font-size: 1.125rem;
+          line-height: 150%;
+          text-align: center;
+          letter-spacing: 0.1px;
+          color: #ffffff;
+          padding-inline: .5rem;
+        }
+      }
+    }
+    .circles-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      .img-container{
+        width: 100%;
+        height:auto;
+        overflow: hidden;
+        padding-top: 2.8rem;
+        img{
+          border-radius: 1.875rem;
+          width: 90%;
+          height: 90%;
+          object-fit: contain;
+        }
+      }
+      .green-circle {
+        height: 3rem;
+        width: 3rem;
+        background-color: #046a38;
+        border-radius: 50%;
+        position: absolute;
+        top: 33%;
+        left: 75%;
+        &.small1 {
+          height: 0.75rem;
+          width: 0.75rem;
+          top: 32%;
+          left: 18%;
+        }
+        &.small2 {
+          height: 0.75rem;
+          width: 0.75rem;
+          top: 27%;
+          left: 75%;
+        }
+        &.medium1 {
+          height: 1.4rem;
+          width: 1.4rem;
+          top: 20%;
+          left: 12%;
+        }
+        &.medium2 {
+          height: 1.4rem;
+          width: 1.4rem;
+          top: 96%;
+          left: 20%;
+        }
+      }
+    }
+
+  }
+}
+@media (min-width : 1025px) {
+  .recipe-overview-section {
+    .insideLyr {
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 3rem;
+      height: calc(100vh - 120px);
+      gap: 20%;
+      padding-bottom: 8rem;
+      padding-top: 0;
+      .overview-section-header {
+        display: flex;
+        // padding-bottom: 3.5rem;
+        .header-container {
+          text-align: start;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 1.5rem;
+          padding-inline-start: 17%;
+          padding-top: 0;
+          h1 {
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+            font-size: 4.2rem;
+            padding-bottom: 0;
+          }
+          span {
+            text-align: start;
+            width: 80%;
+            margin-bottom: -1rem;
+            padding-inline: unset;
+          }
+        }
+      }
+      .circles-container {
+        padding-inline-end: 5%;
+        margin-inline-start: -10%;
+        // margin-top: -5rem;
+       .img-container{
+        padding-top: 0;
+        width: 35rem;
+       }
+        .green-circle {
+          height: 5rem;
+          width: 5rem;
+          top: 33%;
+          left: 70%;
+          z-index: 1;
+          &.small2 {
+            width: 1.3rem;
+            height: 1.3rem;
+            left: 70%;
+          }
+          &.small1 {
+            width: 1.3rem;
+            height: 1.3rem;
+            left: 14%;
+          }
+          &.medium1 {
+            height: 2.6rem;
+            width: 2.6rem;
+            top: 25%;
+            left: 6%;
+          }
+          &.medium2 {
+            height: 2.6rem;
+            width: 2.6rem;
+            top: 92%;
+          }
+        }
+      }
+
+    }
+  }
+  .overview-recipe-bg{
+    overflow: hidden;
+    .bg-img{
+      position: absolute;
+      z-index: 1;
+      top: -8%;
+      left: 49%;
+    }
+  }
+}

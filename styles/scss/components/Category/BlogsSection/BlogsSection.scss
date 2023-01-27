@@ -1,0 +1,123 @@
+.product-blogs-section{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+   overflow: hidden;
+   justify-content:center ;
+    .blogs-section-header {
+      position: relative;
+      z-index: 1;
+        h1 {
+          font-family: "fiber-vintage";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.9rem;
+          line-height: 3rem;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #2A3238;
+        }
+      }
+      .blogs-swiper{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        .swiper {
+            padding-top: 2rem !important;
+          }
+          .blog-card-section-container{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-inline-start: 1rem;
+            .blogs-main-card {
+           
+              background-color: white;
+          }
+        }
+        .swiper-arrows-container {    
+          .swiper-button {
+            color: #2A3238;
+            border: 2px solid rgba($color: black, $alpha: 0.2);
+            font-size: 1.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .blog-button-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 1.5rem;
+        .blog-button {
+          font-family: "somatic-rounded";
+          color: #2A3238;
+          letter-spacing: 0.5px;
+          border: 2px solid #2A3238;
+          border-radius: 1.25rem;
+          &:hover {
+            color: white;
+            background-color: #2a3238;
+            border: 2px solid #2a3238
+          }
+        }
+      }
+      
+       //swiper bar
+
+  .swiper-pagination-progressbar {
+    height: 1.5px !important;
+    width: 80% !important;
+    left: 2% !important;
+    top: unset !important;
+    bottom: 1.5rem !important;
+    background-color: rgb(163, 162, 162);
+    .swiper-pagination-progressbar-fill {
+      background-color: #2A3238 !important;
+    }
+  }
+}
+
+@media (min-width : 1025px) {
+  .product-blogs-section {
+    padding: 4rem 0 4rem 0;
+    .blogs-section-header {
+      display: flex;
+      width:100% ;
+      justify-content: space-between;
+      padding-inline-start: 6%;
+      padding-inline-end: 5.5%;
+      padding-bottom: 0rem;
+      h1 {
+        font-size: 4rem;
+      }
+      .blog-button {
+        font-family: "somatic-rounded";
+        color: #2A3238;
+        letter-spacing: 0.5px;
+        border: 2px solid #2A3238;
+        border-radius: 1.25rem;
+        &:hover {
+          color: white;
+          background-color: #2a3238;
+          border: 2px solid #2a3238
+        }
+      }
+    }
+    .blogs-swiper {
+      padding-inline-start: 5.5%;
+      padding-inline-end: 1%;
+      .blog-card-section-container{
+        width: 85%;
+      }
+      .swiper-arrows-container {
+        padding-inline-start: 85%;
+        padding-top: 2rem;
+      }
+    }
+  }
+}

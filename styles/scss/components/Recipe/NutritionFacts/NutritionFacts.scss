@@ -1,0 +1,99 @@
+.recipe-detail-nutrition-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-inline-start: 6%;
+  padding-inline-end: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .header {
+    margin-bottom: 3rem;
+    font-family: "fiber-vintage";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.9rem;
+    line-height: 2.9rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2a3238;
+  }
+  .description {
+    font-family: "somatic-rounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    color: #934d11;
+  }
+  .nurtition-container {
+    width: 100%;
+    display: flex;
+    padding-inline-end: 1rem;
+    flex-direction: column;
+    .nutrition-group {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .nutrition-items {
+        width: 100%;
+        display: flex;
+        padding-inline-end: 1rem;
+        padding-inline-start: 1rem;
+        .item {
+          font-family: "somatic-rounded";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1.375;
+          line-height: 130%;
+          letter-spacing: 0.5px;
+          &.name {
+            color: #2a3238;
+            width: 85%;
+            text-align: start;
+          }
+          &.value {
+            color: #934d11;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width : 1025px) {
+  .recipe-detail-nutrition-section {
+    padding-inline-start: 6.5%;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .header {
+      font-size: 4.2rem;
+      line-height: 4rem;
+      
+    }
+    .nurtition-container {
+      flex-direction: row;
+      width: 100%;
+      .nutrition-group {
+        flex-direction: column;
+        width: 40%;
+        justify-content: unset;
+        .nutrition-items {
+          padding-inline-start: unset;
+          gap: 5rem;
+          width: 100%;
+          .item {
+            &.name {
+              width: 28%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

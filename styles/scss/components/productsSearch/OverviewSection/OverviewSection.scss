@@ -1,0 +1,43 @@
+.products-search-overview-section {
+  background: linear-gradient(180deg, #0dd2c3 0%, #0f877b 100%);
+  position: relative;
+    .header-container {
+      // background: linear-gradient(180deg, #0dd2c3 0%, #0f877b 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      h1 {
+        font-family: "fiber-vintage";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.9rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+  @media (min-width : 1025px) {
+    .products-search-overview-section {
+      padding-bottom: 3rem;
+      .header-container {
+        // background: linear-gradient(to right,  #046a38 50%, transparent 50%);
+        padding-inline-start: 6.5%;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        text-align: start;
+        align-items: flex-start;
+        gap: 0rem;
+        h1 {
+          font-size: 4.2rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+  

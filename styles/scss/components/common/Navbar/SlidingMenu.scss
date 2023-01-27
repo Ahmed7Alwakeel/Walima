@@ -1,0 +1,416 @@
+// To delay items transition dynamically
+@mixin transitionDelay {
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{$i * 0.1 + 0.7}s;
+    }
+  }
+}
+@mixin closingTransitionDelay {
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      transition-delay: #{$i * 0.05 + 0.1}s;
+    }
+  }
+}
+
+.burger-menu {
+  z-index: -1 !important;
+}
+.slide-container {
+  width: 100%;
+  height: 100%;
+  background-color: #2a3238;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 50;
+  cursor: default;
+  .icon-links {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    padding-inline-start: 0rem;
+    width: 100%;
+    height: 100px;
+    align-items: flex-end;
+    .hamburger-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 1.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: 3px solid #f1f1f1;
+      padding-top: 0.5rem;
+    }
+    .profile-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 1.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: 3px solid #f1f1f1;
+      @extend .hamburger-icon;
+      padding-top: 0rem;
+      &:hover{
+        color: #934d11
+      }
+    }
+    .bookmark-icon {
+      @extend .hamburger-icon;
+      padding-top: 0rem;
+    }
+    .lang-icon {
+      @extend .hamburger-icon;
+      padding-top: 0rem;
+      max-height: 3rem;
+      width: 5rem;
+      border-radius: 1rem;
+      div {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .links-quality-container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 84%;
+    overflow: scroll;
+    .links-container {
+      // overflow: scroll;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: 0rem 2rem 0rem 2rem;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      padding-top: 5rem;
+      background-color: #2a3238;
+      .links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        font-family: "somatic-rounded";
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        &.active{
+          color: #934d11;
+        }
+        &.last-link {
+          border: 0;
+          padding-bottom: 0;
+          &::after{
+            display: none;
+          }
+          &::before{
+            display: none;
+          }
+        }
+        .link-circle {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          border: 2px solid rgba(255, 255, 255, 0.1);
+          cursor: pointer;
+          overflow: hidden;
+          position: relative;
+          transition: 0.5s all;
+          .arrow-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s all ease-in-out;
+            &.second-arrow {
+              left: -10rem;
+              position: absolute;
+            }
+          }
+          &:hover {
+            border: 2px solid white;
+            .arrow-container {
+              &.second-arrow {
+                left: 0.1rem;
+                top: 0.1rem;
+              }
+              &.first-arrow {
+                transform: translateX(100%);
+              }
+            }
+          }
+        }
+      }
+      .products-item {
+        .chakra-accordion {
+          margin-top: 0;
+          .chakra-accordion__item {
+            position: relative;
+            .accordion-border {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: rgba(255, 255, 255, 0.1);
+            }
+          }
+        }
+        &.active {
+          .chakra-accordion {
+            .chakra-accordion__item {
+              .accordion-border {
+                background-color: #934d11;
+              }
+            }
+          }
+        }
+        .chakra-accordion__button {
+          padding: 0;
+        }
+        .products-sub-items {
+          padding-inline-start: 0;
+          list-style: none;
+          width: 100%;
+          transition: all ease-in-out 0.25s;
+          .sub-item {
+            padding-bottom: 0.75rem;
+            padding-top: 0.75rem;
+            font-size: 1.25rem;
+            font-family: "somatic-rounded";
+            text-transform: uppercase;
+            cursor: pointer;
+            &:last-child{
+              margin-bottom: 1rem;
+            }
+            &.active{
+              color: #934d11;
+            }
+          }
+        }
+        .custom-border {
+          &::after {
+            width: 0;
+          }
+        }
+      }
+    }
+    .custom-border{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      &::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        bottom: 0;
+        box-sizing: border-box;
+      } 
+       &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+      }
+      // &:hover::after {
+      //   height: 100%;
+      //   width: 100%;
+      //   opacity: 1;
+      //   border-color: white;
+      //   transition: .2s transform linear,.2s width linear .2s;
+      // }
+      &.active{
+        color: #934d11;
+        &::before {
+          border-color: #934d11;
+        }
+        &:hover::after{
+          border-color: #934d11;
+        }
+      }
+    }
+    .quality-container {
+      // background: #9cbc5d;
+      width: 0;
+      height: 100%;
+      display: none;
+      flex-direction: column;
+      padding: 2rem 2rem 8rem 3rem;
+      h1 {
+        font-family: "somatic-rounded";
+        color: white;
+        font-size: 2.3rem;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .chakra-accordion {
+    margin-top: 0.5rem;
+    border: 0;
+    .chakra-accordion__item {
+      border-bottom: 3px dashed rgba(255, 255, 255, 0.2);
+      stroke-width: 80%;
+      transition: .3s all ease-in-out;
+      &:hover {
+        border-bottom: 3px dashed white;
+      }
+      &:last-child {
+        border: 0;
+      }
+      h2 {
+        margin: 0.3rem 0;
+      }
+      .chakra-accordion__panel {
+        padding: 0 0 1.8rem;
+        line-height: 1.2rem;
+        border: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 15px;
+        color: white;
+        // padding-bottom: 2rem;
+        .img-container {
+          width: 30%;
+          height: 30%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .chakra-accordion__heading {
+        font-family: "somatic-rounded";
+      }
+      .chakra-accordion__button {
+        outline: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 130%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: transparent;
+        font-family: "somatic-rounded";
+        display: flex;
+        align-items: center;
+        border: 0;
+        padding: 1rem 0;
+        cursor: pointer;
+        &:focus {
+          box-shadow: none;
+        }
+        img {
+          transform: scale(0.8);
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  // .slide-container .links-quality-container .links-container .links {
+  //   padding-bottom: 2.25rem;
+  //   padding-top: 2.25rem;
+  // }
+}
+@media (min-width: 1025px) {
+  // .slide-container .links-quality-container .links-container .links {
+  //   padding-bottom: 1.5rem;
+  //   padding-top: 1.5rem;
+  // }
+  .slide-container
+    .links-container
+    .icon-links
+    .hamburger-icon
+    .hamburger-react
+    > div:first-arrow-of-type {
+    height: 2px !important;
+  }
+
+  .slide-container {
+    background: linear-gradient(
+      to left,
+      #2a3238 40%,
+      #934d11 0.1%,
+      #934d11 70%,
+      #0f877b 0.1%,
+      #0f877b 100%
+    );
+    .links-quality-container {
+      overflow: hidden;
+      .links-container {
+        width: 40%;
+        padding: 0;
+        padding-inline-start: 0rem;
+        padding-inline-end: 0rem;
+        justify-content: center;
+        align-items: center;
+        .links {
+          width: 80%;
+        }
+        // padding: 0rem 8rem 0rem 3rem;
+      }
+      .quality-container {
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 0rem 2rem 0rem 2rem;
+      }
+      .custom-border {
+        &:hover::after {
+          height: 100%;
+          width: 100%;
+          opacity: 1;
+          border-color: white;
+          transition: .2s transform linear,.2s width linear .2s;
+        }
+      }
+    }
+  }
+}
+
+.itemAppear {
+  transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s;
+  opacity: 1;
+  transform: none;
+  // transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  @include transitionDelay;
+}
+
+.itemRemoval {
+  opacity: 0;
+  transition: opacity ease-in-out 0.3s, transform ease-in-out 0.3s;
+  // transition-timing-function: cubic-bezier(.215,.61,.355,1);
+  @include closingTransitionDelay;
+  // transition-delay: 0;
+  transform: translateY(20px);
+}

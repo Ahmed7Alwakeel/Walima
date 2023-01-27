@@ -1,0 +1,71 @@
+:lang(ar) {
+    direction: rtl;
+.button--wayra::before {
+    transform: rotate3d(0, 0, 1, 45deg) translate3d(-6em, -20em, 0) !important;
+    border-radius: 1rem;
+    transform-origin: -70% 250% !important;
+    z-index: 0 !important;
+  }
+  .contact-section .insideLyr .form-button-container.button--wayra::before {
+    transform: rotate3d(0, 0, 1, 45deg) translate3d(1em, -24em, 0) !important;
+    transform-origin: 0% 0% !important;
+  }
+  .signin-section-container .insideLyr .form-container form .form-button-container.button--wayra::before {
+    transform-origin: 40% 250% !important;
+  }
+  .menu-search-filters .tabs-container .react-tabs .search-box-container .searchBtn.button--wayra::before {
+    // transform-origin: -9% 111% !important;
+    transform-origin: -21% 250% !important;
+  }
+  .contact-section .insideLyr .form-button-container.button--wayra:hover::before,
+  .menu-search-filters .tabs-container .react-tabs .search-box-container .searchBtn.button--wayra:hover::before  {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg) !important;
+    transform: rotate3d(0, 0, 1, 0deg) !important;
+    transform-origin: 0% 300% !important;
+  }
+  .button--wayra:hover::before {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg) !important;
+    transform: rotate3d(0, 0, 1, 0deg) !important;
+    transform-origin: -80% 250% !important;
+  }
+  
+  .blogs-main-card .card-text .button-group .blog-card-button.button--wayra:hover::before  {
+    transform-origin: 20% 250% !important;
+  } 
+  .blogs-main-card .card-text .button-group .blog-card-button.button--wayra::before  {
+    transform-origin: 25% 200% !important;
+    
+  }
+  .recipe-card .card-body .card-button .recipe-button.button--wayra::before{
+    transform-origin: -22% 186% !important;
+  }
+  .search-filters .tabs-container .react-tabs .search-box-container .buttonOuterContainer.button--wayra::before {
+    transform-origin: -92% 266% !important;
+  }
+  .recipe-card .card-body .card-button .recipe-button.button--wayra:hover::before{
+    transform-origin: -20% 300% !important;
+  }
+  .search-filters .tabs-container .react-tabs .search-box-container .buttonOuterContainer.button--wayra:hover::before {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg) !important;
+    transform: rotate3d(0, 0, 1, 0deg) !important;
+    transform-origin: -100% 300% !important;
+  }
+  .btn-text.second {
+    // transform: rotate3d(0, 0, 1, 45deg) translate3d(-5em, -9em, 0) !important;
+    transform: rotate3d(0, 0, 1, 45deg) translate3d(-6em, -15em, 0) !important;
+  // border-radius: 1rem;
+  transform-origin: -70% 250% !important;
+  }
+  .recipe-button:hover .button-container .btn-text.second {
+    transform: none !important;
+    opacity: 1;
+  }
+  .search-filters-recipes .search-box-container .buttonOuterContainer:hover .button-container .btn-text.second {
+    transform: none !important;
+    opacity: 1;
+}
+.button-animation:hover .button-container .btn-text.second {
+  transform: none !important;
+  opacity: 1;
+}
+}

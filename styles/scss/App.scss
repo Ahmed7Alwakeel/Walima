@@ -1,0 +1,270 @@
+@import './style.scss';
+@import './components/common/Navbar/Navbar.scss';
+@import './components/common/Navbar/SlidingMenu.scss';
+@import './components/Home/MainSection/MainSection.scss';
+@import './components/common/Button/Button.scss';
+@import './components/common/Footer/Footer.scss';
+@import './components/Home/ProductSection/SearchSection/SearchSection.scss';
+@import './components/Home/ProductSection/ProductSection.scss';
+@import './components/Home/ProductSection/ProductsType/ProductsType.scss';
+@import './components/Home/RecipesSection/RecipesSection.scss';
+@import './components/Blogs/OverviewSection/OverviewSection.scss';
+@import './components/Blog/OverviewSection/OverviewSection.scss';
+@import './components/Blog/BlogDetailSection/BlogDetailSection.scss';
+@import './components/Blog/TipsSection/TipsSection.scss';
+@import './components/Blog/RecipeSection/RecipeSection.scss';
+// @import './components/Blog/ProductsSection/ProductsSection.scss';
+@import './components/common/BlogCard/BlogCard.scss';
+@import './components/common/ProductCard/ProductCard.scss';
+@import './components/common/RecipeCard/RecipeCard.scss';
+@import './components/common/TipsItems/TipsItems.scss';
+@import './components/common/SwiperArrows/SwiperArrows.scss';
+@import './components/Recipes/OverviewSection/OverviewSection.scss';
+@import './components/Recipes/CategoriesSection/CategoriesSection.scss';
+@import './components/Recipes/BlogsSection/BlogsSection.scss';
+@import './components/Recipes/SearchSection/SearchSection.scss';
+@import './components/Category/OverviewSection/OverviewSection.scss';
+@import './components/Category/ClaimsSection/ClaimsSection.scss';
+@import './components/Category/CategorySection/CategorySection.scss';
+@import './components/Category/BlogsSection/BlogsSection.scss';
+@import './components/common/ClaimCardsSection/ClaimCardsSection.scss';
+@import './components/Product/BlogsSection/BlogsSection.scss';
+// @import './components/Product/CategoriesSection/CategoriesSection.scss';
+@import './components/Product/OverviewSection/OverviewSection.scss';
+@import './components/About/OverviewSection/OverviewSection.scss';
+@import './components/About/ClaimsSection/ClaimsSection.scss';
+@import './components/About/WhoWeSection/WhoWeSection.scss';
+@import './components/About/MissionSection/MissionSection.scss';
+@import './components/Products/OverviewSection/OverviewSection.scss';
+@import './components/Products/CategoriesSection/CategoriesSection.scss';
+// @import './components/Recipe/ProductsSection/ProductsSection.scss';
+@import './components/Recipe/BlogsSection/BlogsSection.scss';
+// @import './components/Recipe/CategoriesSection/CategoriesSection.scss';
+@import './components/Recipe/NutritionFacts/NutritionFacts.scss';
+@import './components/Recipe/Directions/Directions.scss';
+@import './components/Recipe/Ingredients/Ingredients.scss';
+@import './components/Recipe/OverviewSection/OverviewSection.scss';
+@import './components/Bookmarks/OverviewSection/OverviewSection.scss';
+@import './components/Bookmarks/RecipeSection/RecipeSection.scss';
+@import './components/Auth/SignIn/SignIn.scss';
+@import './components/Contact/ContactUs.scss';
+@import './components/RecipeCategory/CategorySection/CategorySection.scss';
+@import './components/RecipeCategory/OverviewSection/OverviewSection.scss';
+@import './components/common/ProductsSection/ProductsSection.scss';
+@import './components/common/RecipeSection/RecipeSection.scss';
+@import './components/common/BlogsSection/BlogsSection.scss';
+@import './components/common/LoaderSection/LoaderSection.scss';
+@import './components/Bookmarks/BlogsSectionCards.scss/BlogsSectionCards.scss';
+@import './components/Bookmarks/ProductsSection/ProductsSection.scss';
+@import './components/productsSearch/OverviewSection/OverviewSection.scss';
+@import './components/RecipesSearch/RecipesSection/RecipesSection.scss';
+@import './components/Blogs/BlogsSectionCards.scss/BlogsSectionCards.scss';
+@import './components/common/Navbar/SearchSection.scss';
+@import './components/common/ScrollToTop/ScrollToTop.scss';
+@import './components/productsSearch/OverviewSection/SearchSection.scss';
+
+.not-found{
+  height: calc(100vh - 120px);
+  background-color: #0dd2c3;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+.no-scroll{
+  position: fixed;
+  overflow-y: hidden;
+  height: 100%;
+}
+html{
+  overflow-x: hidden !important;
+  scroll-behavior: auto !important;
+}
+body{
+  width: 100%;
+}
+.swiper{
+  width: 100% !important;
+}
+@font-face {
+  font-family: "somatic-rounded";
+  src: url("../../public/fonts/Somatic/Somatic-Rounded.otf");
+  font-display: swap;
+
+}
+
+.somatic-rounded {
+  font-family: "somatic-rounded";
+}
+@font-face {
+  font-family: "fiber-vintage";
+  src: url("../../public/fonts/Fiber-Vintage/fibre-font.otf");
+  font-display: swap;
+}
+.fiber-vintage {
+  font-family: "fiber-vintage";
+}
+@font-face {
+  font-family: "ithra-bold";
+  src: url("../../public/fonts/Ithra/ArbFONTS-Ithra-Bold.ttf");
+}
+
+@font-face {
+  font-family: "cairo";
+  src: url("../../public/fonts/GE-Flow-Regular.ttf");
+  font-display: swap;
+
+}
+.cairo-font {
+  font-family: "cairo";
+}
+
+.ithra-bold {
+  font-family: "ithra-bold";
+}
+//fade on h1
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.one-item{
+  padding-inline: 2.5rem 2rem !important;
+}
+.one-item-products{
+  padding-inline: 2.5rem !important;
+  .swiper{
+    padding: 0 !important;
+    .product-main-card {
+      margin: 0 !important;
+    }
+  }
+}
+.no-opacity{
+  opacity: 0 !important;
+  margin-top:-2rem
+}
+@media(min-width : 768px){
+    .one-item{
+      padding: 0 !important;
+    }
+    .one-item-products{
+      padding-inline: 0 !important;
+      .swiper{
+        .product-main-card {
+          margin-inline-start: 1rem !important;
+        }
+      }
+    }
+}
+@media (min-width: 1025px){
+  .no-favorite-message{
+    margin-bottom:4rem ;
+  }
+  .button--wayra::before {
+    border-radius: 1rem;
+    z-index: 0 !important;
+  }
+  html body {
+    background: #0dd2c3 ; 
+    background-position: center;
+  }
+  .background-white{
+    background-color: white !important;
+  }
+  .bg-product-detail {
+    background: linear-gradient(to right, #0dd2c3 60%, #166938 40%);
+  }
+  .bg-products {
+    background: linear-gradient(to right, #0dd2c3 50%, #166938 50%) !important;
+  }
+}
+
+@media (min-width: 1279px) {
+  html, .body {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1350px) {
+  html, .body {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1441px) {
+  html, .body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1900px) {
+  html, body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html, body {
+    font-size: 24px;
+  }
+}
+.swiper-button-disabled{
+  background-color: rgb(240, 234, 234);
+  svg{
+    color: rgb(216, 212, 212);
+  }
+  cursor: unset !important;
+}
+
+.page {
+  transition: all 0.7s ease-in-out;
+  transform: none;
+  // background: linear-gradient(180deg, #0dd2c3 0%, #0f877b 100%) !important;
+
+}
+
+.whileMenuOpening {
+  &.insideLyr {
+    transform: translate(50
+    px, 300px) rotate(5deg) scale(1.25, 1.25);
+  }
+  transform: translate(0px, 700px) rotate(5deg) scale(1.25, 1.25);
+  transition: all 1s ease-in-out;
+  // background: linear-gradient(180deg, #0dd2c3 0%, #0f877b 100%) !important;
+  overflow: hidden !important;
+}
+
+.menu-bg{
+  // background: linear-gradient(to right, #0dd2c3 50%, #166938 50%);
+}
+
+body {
+  overflow: hidden !important;
+}
+
+.insideLyr {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset;
+  text-align: unset;
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s ease-in-out;
+  // align-items: center;
+  //   text-align: center;
+}
+
+
+

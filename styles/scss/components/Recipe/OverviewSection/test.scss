@@ -1,0 +1,245 @@
+.recipe-detail-overview-section {
+    background: linear-gradient(180deg, #0dd2c3 0%, #0f877b 100%);
+    overflow: hidden;
+    .lyr {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-inline-start: 2%;
+      padding-inline-end: 2%;
+  
+      a {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      .overview-header {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding: 0;
+        margin: 0;
+        font-family: "fiber-vintage";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.75rem;
+        line-height: 4rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+        padding-inline-start: 5rem;
+        padding-inline-end: 5rem;
+        h1 {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .video-container {
+        padding-bottom: 1.5rem;
+        padding-top: 1rem;
+      }
+      .card-container {
+        padding-bottom: 1.5rem;
+  
+        .info-card {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          background: rgba(42, 50, 56, 0.24);
+          border-radius: 1.875rem;
+          width: 21rem;
+          height: 13rem;
+          padding: 1rem 1rem 1rem 1rem;
+          .info {
+            display: flex;
+            justify-content: flex-start;
+            padding-bottom: 1rem;
+            .icon-container {
+              width: 2.5rem;
+              height: 2.5rem;
+              margin-inline-end: 1rem;
+              background: rgba(42, 50, 56, 0.2);
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+            }
+            .card-text {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .rating-container {
+        padding-bottom: 1.5rem;
+        .rating-label {
+          color: white;
+          font-size: 1.125rem;
+        }
+        .icon {
+          margin-inline-start: 0.25rem;
+        }
+      }
+      .header-icons-container {
+        padding-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        .icon-container {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+  
+          .icon {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: #934d11;
+            height: 2.75rem;
+            width: 2.75rem;
+            border-radius: 50%;
+          }
+          span {
+            color: white;
+            font-size: 1.125rem;
+          }
+        }
+      }
+      .tags-container {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        .tag-label {
+          color: white;
+          font-size: 1.125rem;
+        }
+        .tag {
+          font-family: "somatic-rounded";
+          color: #ffffff;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+          background: rgba(255, 255, 255, 0.24);
+          border-radius: 1.875rem;
+  
+          cursor: pointer;
+        }
+      }
+      .share-container {
+        padding-bottom: 1.5rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        .icon-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+  
+          width: 2.5rem;
+          height: 2.5rem;
+          border-radius: 50%;
+          border: 1px solid rgba($color: white, $alpha: 0.1);
+        }
+      }
+    }
+  }
+  @media (min-width : 1025px) {
+    .recipe-detail-overview-section {
+      .lyr {
+        flex-direction: row;
+        padding-inline-start: unset;
+        padding-inline-end: unset;
+        padding-top: 1rem;
+        a{
+          padding-bottom: 0rem;
+      }
+        .card-container {
+          .info-card {
+            flex-direction: row;
+            background: rgba(42, 50, 56, 0.24);
+            border-radius: 3.75rem;
+            width: 34.2rem;
+            height: unset;
+            gap: 1.5rem;
+            padding: 1rem 1.5rem 1rem 1.5rem;
+            .info {
+              padding-bottom: 0rem;
+            }
+          }
+        }
+        .overview-header {
+          text-align: start;
+          padding-inline-start: unset;
+          padding-inline-end: unset;
+          h1 {
+            text-align: start;
+            font-size: 4rem;
+            width: 75%;
+          }
+        }
+        .lyr-header {
+          z-index: 2;
+          span{
+              padding-inline-start: 16%;
+  
+          }
+          .video-container {
+            padding-inline-start: 11%;
+            margin-inline-end: -5rem;
+            margin-top: -.5rem;
+          }
+        }
+        .lyr-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          background: #046a38;
+          border-top-left-radius: 10rem;
+          padding-inline-start: 12%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          
+          .header-icons-container {
+            justify-content: flex-start;
+          }
+          .tags-container {
+            justify-content: flex-start;
+          }
+          .share-container {
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

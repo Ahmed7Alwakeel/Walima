@@ -1,0 +1,103 @@
+.product-detail-blogs-section{
+    background: #00C4B5;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+   overflow: hidden;
+    .blogs-section-header {
+      position: relative;
+    z-index: 1;
+        h1 {
+          font-family: "fiber-vintage";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.9rem;
+          line-height: 3rem;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+      .blogs-swiper{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .swiper {
+            padding-top: 2rem !important;
+          }
+          .blog-card-section-container{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-inline-start: 1rem;
+            .blogs-main-card {
+              background-color: white;
+          }
+          }
+        
+        .swiper-arrows-container {    
+          .swiper-button {
+            color: white;
+            border: 2px solid rgba($color: white, $alpha: 0.4);
+            font-size: 1.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+       //swiper bar
+  .swiper-pagination-progressbar {
+    height: 1.5px !important;
+    width: 80% !important;
+    left: 2% !important;
+    top: unset !important;
+    bottom: 1.5rem !important;
+    background-color: rgba(255,255,255,.1);
+    .swiper-pagination-progressbar-fill {
+      background-color: white !important;
+    }
+  }
+}
+
+@media (min-width : 1025px) {
+  .product-detail-blogs-section{
+    padding: 4rem 0 4rem 0;
+    .blogs-section-header {
+      display: flex;
+      width:100% ;
+      justify-content: space-between;
+      padding-inline-start: 6%;
+      padding-inline-end: 6%;
+      padding-bottom: 0rem;
+      h1 {
+        font-size: 4rem;
+      }
+      .blog-button {
+        font-family: "somatic-rounded";
+        color: white;
+        letter-spacing: 0.5px;
+        border: 2px solid white;
+        border-radius: 1.25rem;
+        &:hover {
+          color: white;
+          background-color: #2a3238;
+          border: 2px solid #2a3238
+        }
+      }
+    }
+    .blogs-swiper {
+      padding-inline-start: 3rem;
+      padding-inline-end: 1rem;
+      .blog-card-section-container{
+        width: 85%;
+      }
+      .swiper-arrows-container {
+        padding-inline-start: 80%;
+        padding-top: 2rem;
+      }
+    }
+  }
+}

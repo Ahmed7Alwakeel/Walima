@@ -1,0 +1,33 @@
+.search-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.productType-section{
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+}
+.productType-section-recipe-category{
+    display: flex;
+    justify-content: center;
+    padding-top: 0rem;
+    margin-top: -1rem;
+}
+@media(min-width : 1025px) {
+  .productType-section{
+    padding-top: 4rem;
+  }
+  .productType-section-recipe-category{
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    margin-top: 0;
+}
+}
+
+@media(min-width : 1800px) {
+  .productType-section {
+    padding-top: 2.5rem;
+  }
+}

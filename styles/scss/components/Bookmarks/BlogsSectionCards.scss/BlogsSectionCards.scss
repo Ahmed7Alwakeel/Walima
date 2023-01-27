@@ -1,0 +1,139 @@
+.blogs-section-cards-bookmarks {
+  padding-bottom: 0rem;
+  padding-inline-start: 0%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+  background: #00c4b5;
+  .blogs-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    padding-inline: 1rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4rem;
+    h1 {
+      padding: 0;
+      margin: 0;
+      font-family: "fiber-vintage";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.9rem;
+      line-height: 2.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: white;
+    }
+  }
+  .cards-container {
+    width: 100%;
+    .category-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .category-swiper {
+        .recipe-card-container-section {
+          width: 100%;
+          // overflow: hidden;
+          height: auto;
+        }
+      }
+
+      .swiper {
+        // padding-top: 2rem !important;
+        padding-inline-start: 5%;
+        padding-inline-end:8%;
+        .swiper-arrows-container {
+          padding-top: 3rem;
+          padding-inline-start: 5%;
+          .swiper-button {
+            color: white;
+            border: 2px solid rgba($color: white, $alpha: 0.4);
+            font-size: 1.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .recipe-button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .recipe-button {
+          font-family: "somatic-rounded";
+          color: white;
+          letter-spacing: 0.5px;
+          border: 2px solid white;
+          border-radius: 1.25rem;
+          &:hover {
+            color: white;
+            background-color: #2a3238;
+            border: 2px solid #2a3238;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .blogs-section-cards-bookmarks {
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 5.5%;
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+    .button-section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // padding-top: 2rem;
+      // padding-bottom: 2rem;
+      margin-top: -2rem;
+      .blog-button {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 3px solid #f1f1ff;
+        border-radius: 1.25rem;
+        font-family: "somatic-rounded";
+        &:hover {
+          border: 3px solid #00c4b5;
+        }
+      }
+    }
+
+    .blogs-header {
+      padding-top: 0;
+      text-align: start;
+      padding-bottom: 0;
+      margin-bottom: 4rem;
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 0rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+    .cards-container {
+      padding-inline-start: 1.5%;
+      display: flex;
+      flex-wrap: wrap;
+      // transform: translateY(-1rem);
+      .card-section {
+        width: 33.3%;
+        padding-bottom: 4rem;
+        // padding-top: 2rem;
+        .blogs-main-card {
+          width: 80%;
+          background-color: white;
+          h1 {
+            font-size: 1.3rem;
+          }
+
+        }
+      }
+    }
+  }
+}

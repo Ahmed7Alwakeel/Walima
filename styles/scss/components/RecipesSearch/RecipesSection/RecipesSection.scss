@@ -1,0 +1,143 @@
+.search-recipe-section {
+	// padding-top: 4rem;
+	background-color: white;
+	padding-bottom: 0rem;
+	padding-inline-start: 0%;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	overflow: hidden;
+	&.remove-padding {
+		padding-bottom: 0;
+		.recipe-card-container-section {
+			padding-bottom: 4rem;
+		}
+	}
+	&.recipesSearchPage {
+		padding-top: 20.5rem;
+		.no-matching-message {
+			width: 100%;
+			margin-bottom: 3rem;
+			text-align: center;
+			.no-matching {
+				font-family: "somatic-rounded";
+			}
+			.no-matching-span {
+				font-family: "somatic-rounded";
+			}
+		}
+	}
+	.recipe-header {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		text-align: center;
+		padding-inline: 1rem;
+		position: relative;
+		z-index: 1;
+		margin-bottom: 4rem;
+		p {
+			padding: 0;
+			margin: 0;
+			font-family: "somatic-rounded";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.125rem;
+			line-height: 130%;
+			letter-spacing: 0.5px;
+			color: #934d11;
+		}
+		h1 {
+			padding: 0;
+			margin: 0;
+			font-family: "fiber-vintage";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2.9rem;
+			line-height: 2.9rem;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: #2a3238;
+		}
+		span {
+			color: #2a3238;
+			font-size: 1.125rem;
+		}
+	}
+	.cards-container {
+		width: 100%;
+		// margin-top: 1%;
+		// margin-inline-start: -1rem;
+		.category-items {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			.category-swiper {
+				.recipe-card-container-section {
+					width: 100%;
+					// overflow: hidden;
+					height: auto;
+				}
+			}
+			.swiper {
+				// padding-top: 8rem !important;
+				padding-inline-end: 8%;
+				padding-inline-start: 2%;
+				// padding-bottom: 4%;
+				.swiper-wrapper {
+					padding-bottom: 1rem;
+				}
+				.swiper-arrows-container {
+					padding-top: 3rem;
+					.swiper-button {
+						color: black;
+						border: 2px solid rgba($color: black, $alpha: 0.1);
+						font-size: 1.5rem;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1025px) {
+	.search-recipe-section {
+		display: flex;
+		flex-direction: column;
+		padding-inline-start: 5.5%;
+		padding-inline-end: 0%;
+		padding-bottom: 0;
+		&.recipesSearchPage {
+			padding-top: 9rem;
+			.no-matching-message {
+				text-align: start;
+				padding-inline-start: 0.5rem;
+			}
+		}
+		.recipe-header {
+			text-align: start;
+			h1 {
+				font-size: 4rem;
+				margin-bottom: 0.75rem;
+			}
+			span {
+				width: 40%;
+			}
+		}
+		.cards-container {
+			padding-inline-start: 0;
+			display: flex;
+			flex-wrap: wrap;
+			.card-section {
+				width: 32.3%;
+				padding-bottom: 4rem;
+				.recipe-card {
+					width: 75%;
+					padding-inline-start: 0.5rem;
+					h1 {
+						font-size: 1.3rem;
+					}
+				}
+			}
+		}
+	}
+}

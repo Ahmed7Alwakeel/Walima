@@ -1,0 +1,71 @@
+
+body {
+  padding: 0;
+  margin: 0;
+}
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* html,body {
+  margin: 0px; padding: 0px; 
+} */
+
+* {
+  /* box-sizing: content-box !important; */
+}
+
+/* 
+#navbar {
+  margin-bottom:0; }
+
+.alert {
+  border-radius: 0; }
+
+.container {
+  width:100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-inline-start: auto; }  */
+
+/* .col-xs-1, .col-sm-1, .col-md-1, .col-sm-1, 
+.col-xs-2, .col-sm-2, .col-md-2, .col-sm-2, 
+.col-xs-3, .col-sm-3, .col-md-3, .col-sm-3, 
+.col-xs-4, .col-sm-4, .col-md-4, .col-sm-4, 
+.col-xs-5, .col-sm-5, .col-md-5, .col-sm-5, 
+.col-xs-6, .col-sm-6, .col-md-6, .col-sm-6, 
+.col-xs-7, .col-sm-7, .col-md-7, .col-sm-7, 
+.col-xs-8, .col-sm-8, .col-md-8, .col-sm-8, 
+.col-xs-9, .col-sm-9, .col-md-9, .col-sm-9, 
+.col-xs-10, .col-sm-10, .col-md-10, .col-sm-10, 
+.col-xs-11, .col-sm-11, .col-md-11, .col-sm-11, 
+.col-xs-12, .col-sm-12, .col-md-12, .col-sm-12 {
+  position: relative;
+  height:100%;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0; }
+
+.row {
+  margin-right: 0;
+  margin-inline-start: 0; }
+
+.footer {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: none; }
+
+.panel {
+  border:none; } */

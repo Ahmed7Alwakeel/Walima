@@ -1,0 +1,146 @@
+.about-calims-section {
+  // overflow: hidden;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: white;
+
+  .claims-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0rem;
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      padding-inline-start: 0rem;
+      margin-bottom: 1rem;
+      h1 {
+        font-family: "fiber-vintage";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #2a3238;
+      }
+      span {
+        color: #2a3238;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        width: 90%;
+      }
+    }
+    .claims-cards-conatiner{
+      padding-top: 6rem;
+  }
+  }
+  .circle-container {
+    width: 50vw;
+    height: 50vw;
+    background-color: #166938;
+    border-radius: 60%;
+    margin-top: -7rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .big-img-container {
+      position: absolute;
+      top: 3%;
+      left: 4%;
+      width: 45vw;
+      height: 45vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 105%;
+        height: 105%;
+        object-fit: cover;
+      }
+    }
+    .small-img-container {
+      position: absolute;
+      left: -18%;
+      top: 49%;
+      width: 40%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media(min-width : 500px){
+  .about-calims-section .circle-container {
+width: 30vw;
+height: 30vw;
+.big-img-container {
+  height: 35vw;
+  width: 35vw;
+}
+}
+}
+@media(min-width : 600px){
+  .about-calims-section .circle-container {
+width: 20vw;
+height: 20vw;
+.big-img-container {
+  width: 25vw;
+  height: 25vw;
+}
+}
+}
+//desktop
+@media (min-width: 1025px) {
+  .about-calims-section {
+    margin-top: unset;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 8rem;
+    .claims-section-header {
+      padding-bottom: 0rem;
+      align-items: flex-start;
+      .header-container {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+        padding-inline-start: 6%;
+        h1 {
+          font-family: "fiber-vintage";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 4rem;
+          line-height: 3rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: #2a3238;
+          padding-bottom: 0rem;
+        }
+        span {
+          color: #2a3238;
+          width: 55%;
+          font-size: 1.125rem;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.details-products-section {
+  background-color: #00c4b5;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  .products-section-header {
+    position: relative;
+    // margin-bottom: -2.5rem;
+    h1 {
+      font-family: "fiber-vintage";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.9rem;
+      line-height: 3rem;
+      text-align: center;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+  .product-swiper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .product-card-container-section {
+      width: 100%;
+      // overflow: hidden;
+      height: auto;
+    }
+    .swiper {
+      // padding-top: 7rem !important;
+    }
+
+    .swiper-arrows-container {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 2rem;
+      padding-inline-start: unset;
+
+      .swiper-button {
+        color: white;
+        border: 2px solid rgba($color: white, $alpha: 0.4);
+      }
+    }
+  }
+  .details-products-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 3px solid #ffffff;
+    border-radius: 1.25rem;
+    padding-inline-start: 3%;
+    font-family: "somatic-rounded";
+    color: white;
+    font-size: 1rem;
+  }
+
+  //swiper bar
+  .swiper-pagination-progressbar {
+    height: 1.5px !important;
+    width: 77% !important;
+    left: 7% !important;
+    top: unset !important;
+    bottom: 1.5rem !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    .swiper-pagination-progressbar-fill {
+      background-color: white !important;
+    }
+  }
+}
+@media (min-width: 1025px) {
+  .details-products-section {
+    padding: 4rem 0 5rem 0;
+    .products-section-header {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-inline-start: 6%;
+      padding-inline-end: 6%;
+      padding-bottom: 2rem;
+      h1 {
+        font-size: 4.2rem;
+      }
+      .product-button {
+        font-family: "somatic-rounded";
+        color: white;
+        letter-spacing: 0.5px;
+        border: 2px solid white;
+        border-radius: 1.25rem;
+        &:hover {
+          color: white;
+          background-color: #2a3238;
+          border: 2px solid #2a3238;
+        }
+      }
+    }
+    .product-swiper {
+      // padding-inline-start: 5rem;
+      // padding-inline-end: 2.5rem;
+      .product-card-container-section {
+        width: 87%;
+        margin-inline-start: 15%;}
+      .swiper-arrows-container {
+        padding-inline-start: 80%;
+        padding-top: 1rem;
+      }
+    }
+  }
+}

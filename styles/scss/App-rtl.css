@@ -1,0 +1,328 @@
+:lang(ar) {
+  direction: rtl;
+}
+
+:lang(ar) .loader-container .lyr.bg-products {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #166938));
+  background: linear-gradient(to left, transparent 50%, #166938 50%);
+}
+
+:lang(ar) .loader-container .lyr.bg-product-detail {
+  background: -webkit-gradient(linear, right top, left top, color-stop(60%, #0dd2c3), color-stop(40%, #166938));
+  background: linear-gradient(to left, #0dd2c3 60%, #166938 40%);
+}
+
+:lang(ar) .loader-container .lyr.bg-home {
+  background: -webkit-gradient(linear, right top, left top, color-stop(70%, #0dd2c3), color-stop(30%, #166938));
+  background: linear-gradient(to left, #0dd2c3 70%, #166938 30%);
+}
+
+:lang(ar) .blogs-main-card .blogs-card-body .favorite-heart {
+  left: 1rem;
+  right: unset;
+}
+
+:lang(ar) .recipe-card .card-items .favorite-heart {
+  left: 1rem;
+  right: unset;
+}
+
+:lang(ar) .product-main-card .product-card-body .favorite-heart {
+  left: unset;
+  right: 8.25rem;
+}
+
+:lang(ar) .tips-items-container .tip-tag {
+  left: unset;
+  right: 1rem;
+}
+
+:lang(ar) .blogs-overview-items .blogs-big-items .tip-tag {
+  left: unset;
+  right: 1rem;
+}
+
+:lang(ar) .blogs-overview-items .blogs-small-items .small-tip-tag {
+  left: unset;
+  right: 1rem;
+}
+
+:lang(ar) .tips-items .tip-tag {
+  left: unset;
+  right: 5%;
+}
+
+:lang(ar) .blogs-main-card .blogs-card-body .blog-tag {
+  left: unset;
+  right: 1rem;
+}
+
+:lang(ar) .blogs-section-all .swiper-pagination-progressbar {
+  left: unset;
+  right: 7%;
+}
+
+:lang(ar) .main-section .img-container .main-card {
+  left: 34%;
+  right: unset;
+}
+
+:lang(ar) .main-section .img-container .main-circle {
+  right: unset;
+  left: 23%;
+}
+
+:lang(ar) .recipe-section-container .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 6% !important;
+}
+
+:lang(ar) .product-type-container .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .recipe-blogs-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 2% !important;
+}
+
+:lang(ar) .recipes-category-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .product-page-category-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 6% !important;
+}
+
+:lang(ar) .product-detail-blogs-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 2% !important;
+}
+
+:lang(ar) .product-detail-category-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .product-details-products-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .blog-overview .blog-overview-header {
+  border-top-right-radius: unset;
+  border-top-left-radius: 7rem;
+}
+
+:lang(ar) .blog-detail-container .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 18% !important;
+}
+
+:lang(ar) .details-products-section-all .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .recipe-products-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .recipe-details-blogs-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 2% !important;
+}
+
+:lang(ar) .recipe-section-all .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .recipe-details-ingredients-section .ingredients-card {
+  left: unset;
+  right: 67%;
+}
+
+:lang(ar) .about-mission-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 7% !important;
+}
+
+:lang(ar) .product-blogs-section .swiper-pagination-progressbar {
+  left: unset !important;
+  right: 2% !important;
+}
+
+@media (min-width: 600px) {
+  :lang(ar) .main-section .img-container .main-card {
+    left: 49%;
+    right: unset;
+  }
+  :lang(ar) .main-section .img-container .main-circle {
+    right: unset;
+    left: 43%;
+  }
+}
+
+
+@media (min-width: 1025px) {
+  :lang(ar) .products-search-overview-section .header-container {
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, #046a38), color-stop(50%, transparent));
+    background: linear-gradient(to left, #046a38 50%, transparent 50%);
+  }
+  :lang(ar) .recipe-section-all .category-items .category-swiper .recipe-card-container-section {
+    right: unset;
+    left: 4%;
+  }
+  :lang(ar) .recipes-category-section .category-items .category-swiper .recipe-card-container-section {
+    right: unset;
+    left: 4%;
+  }
+  :lang(ar) .main-section .lyr {
+    background: -webkit-gradient(linear, right top, left top, color-stop(70%, transparent), color-stop(30%, #166938));
+    background: linear-gradient(to left, transparent 70%, #166938 30%);
+  }
+  :lang(ar) .main-section .lyr .swiper-arrows-container {
+    right: 41%;
+    left: unset;
+  }
+  :lang(ar) .main-section .img-container .main-card-container {
+    left: 43%;
+    right: unset;
+  }
+  :lang(ar) .main-section .img-container .main-circle {
+    right: unset;
+    left: 34%;
+  }
+  :lang(ar) .product-detail-overview-section .lyr {
+    background: -webkit-gradient(linear, right top, left top, color-stop(60%, transparent), color-stop(40%, #166938));
+    background: linear-gradient(to left, transparent 60%, #166938 40%);
+  }
+  :lang(ar) .product-detail-overview-section .lyr .img-container .small-img-container {
+    right: unset;
+    left: 17%;
+  }
+  :lang(ar) .recipe-overview-section .circles-container .green-circle {
+    left: 7%;
+  }
+  :lang(ar) .recipe-overview-section .circles-container .green-circle.small1 {
+    right: 14%;
+    left: unset;
+  }
+  :lang(ar) .recipe-overview-section .circles-container .green-circle.small2 {
+    left: 5%;
+  }
+  :lang(ar) .recipe-overview-section .circles-container .green-circle.medium1 {
+    left: unset;
+    right: 6%;
+  }
+  :lang(ar) .recipe-overview-section .circles-container .green-circle.medium2 {
+    left: unset;
+    right: 5%;
+  }
+  :lang(ar) .blog-overview .blog-overview-header {
+    border-top-right-radius: unset;
+    border-top-left-radius: 25rem;
+  }
+  :lang(ar) .nav-bar-container.bg-home {
+    background: -webkit-gradient(linear, right top, left top, color-stop(70%, #0dd2c3), color-stop(30%, #166938));
+    background: linear-gradient(to left, #0dd2c3 70%, #166938 30%);
+  }
+  :lang(ar) .nav-bar-container.bg-product-detail {
+    background: -webkit-gradient(linear, right top, left top, color-stop(60%, #0dd2c3), color-stop(40%, #166938));
+    background: linear-gradient(to left, #0dd2c3 60%, #166938 40%);
+  }
+  :lang(ar) .nav-bar-container.bg-products {
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, #0dd2c3), color-stop(50%, #166938));
+    background: linear-gradient(to left, #0dd2c3 50%, #166938 50%);
+  }
+  :lang(ar) .product-type-container .product-type-circle .small-circle {
+    left: unset;
+    right: 93%;
+  }
+  :lang(ar) .product-type-container .product-type-circle .small-img-container {
+    left: unset;
+    right: -9%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .small-img-container {
+    right: unset;
+    left: 83%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .green-circle {
+    left: unset;
+    right: 70%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .green-circle.small2 {
+    left: unset;
+    right: 84%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .green-circle.small1 {
+    left: unset;
+    right: -2%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .green-circle.medium1 {
+    left: unset;
+    right: -12%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .green-circle.small3 {
+    left: unset;
+    right: 18%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .green-circle.small4 {
+    left: unset;
+    right: 15%;
+  }
+  :lang(ar) .about-overview-section .circles-container .img-conatiner .green-circle.small5 {
+    left: unset;
+    right: -16%;
+  }
+  :lang(ar) .about-overview-section .circles-container .text-container {
+    left: -5%;
+    right: unset;
+  }
+  :lang(ar) .products-page-overview-section .lyr {
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, transparent), color-stop(50%, #166938));
+    background: linear-gradient(to left, transparent 50%, #166938 50%);
+  }
+  :lang(ar) .recipe-detail-overview-section .lyr .lyr-container {
+    border-top-left-radius: unset;
+    border-top-right-radius: 10rem;
+  }
+  :lang(ar) .recipe-detail-overview-section .lyr .lyr-header span {
+    left: unset;
+    right: 15%;
+  }
+  :lang(ar) .recipe-detail-overview-section .lyr .lyr-header .video-container {
+    left: unset;
+    right: 15%;
+  }
+  :lang(ar) .bookmarks-overview-section .header-container {
+    background: -webkit-gradient(linear, right top, left top, color-stop(50%, #046a38), color-stop(50%, transparent));
+    background: linear-gradient(to left, #046a38 50%, transparent 50%);
+  }
+  :lang(ar) .signin-section-container .signin-section .form-container {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 1.875rem;
+    border-bottom-right-radius: 1.875rem;
+  }
+  :lang(ar) .signin-section-container .signin-section .img-container {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+  }
+  :lang(ar) .contact-section .contact-header-contanier {
+    border-top-right-radius: unset;
+    border-top-left-radius: 12rem;
+  }
+  :lang(ar) .contact-us-bg .bg-img {
+    top: -9%;
+    right: 43%;
+  }
+}
+/*# sourceMappingURL=App-rtl.css.map */

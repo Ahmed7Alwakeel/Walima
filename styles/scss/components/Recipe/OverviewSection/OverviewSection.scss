@@ -1,0 +1,478 @@
+.recipe-detail-overview-section {
+	background: linear-gradient(180deg, #0dd2c3 0%, #0f877b 100%);
+	overflow: hidden;
+	padding-top: 2rem;
+	padding-bottom: 2.5rem;
+	iframe {
+		border-radius: 2rem;
+	}
+	.lyr {
+		.insideLyr {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-inline-start: 2%;
+			padding-inline-end: 2%;
+			.overview-header {
+				padding: 0;
+				margin: 0;
+				margin-bottom: 2.5rem;
+				font-family: "fiber-vintage";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 3.75rem;
+				line-height: 4rem;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-align: center;
+				// padding-inline-start: 5rem;
+				// padding-inline-end: 5rem;
+				// min-height: 5rem;
+				h1 {
+					width: 100%;
+					text-align: center;
+					font-size: 2rem;
+					margin: 0;
+					padding: 0;
+				}
+			}
+			.video-container {
+				cursor: pointer;
+				margin-bottom: 1.25rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				overflow: hidden;
+				height: 17rem;
+				// width: 100%;
+				width: 90%;
+				// padding-inline-start: 5%;
+				// padding-inline-end: 5%;
+				position: relative;
+				.header-icons-container {
+					padding-bottom: 0rem;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					gap: 2rem;
+					position: absolute;
+					cursor: pointer;
+					top: 1rem;
+					left: 36%;
+					z-index: 10;
+					.icon-container {
+						display: flex;
+						flex-direction: row;
+						gap: 0.5rem;
+						text-align: center;
+						align-items: center;
+						justify-content: center;
+						cursor: pointer;
+						z-index: 2;
+						.icon {
+							display: flex;
+							text-align: center;
+							justify-content: center;
+							align-items: center;
+							background-color: #934d11;
+							color: #934d11;
+							height: 2rem;
+							width: 2rem;
+							border-radius: 50%;
+						}
+						span {
+							color: white;
+							font-size: 1.125rem;
+						}
+					}
+				}
+				.watch-video-button-container {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					border: 1px solid white;
+					background: black;
+					color: white;
+					padding: 0.8rem 1rem;
+					position: absolute;
+					// top: 50%;
+					// left: 33%;
+					z-index: 10;
+					border-radius: 0.5rem;
+					.play-button {
+						cursor: pointer;
+						position: relative;
+						border: 1px solid white;
+						width: 1.5rem;
+						height: 1.5rem;
+						border-radius: 50%;
+						background-color: white;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						color: red;
+					}
+
+					span {
+						position: unset;
+						cursor: pointer;
+					}
+				}
+				video {
+					border-radius: 1.875rem;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: top;
+				}
+				img {
+					border-radius: 1.875rem;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: top;
+				}
+				.overlay {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: center;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 1.875rem;
+					cursor: default;
+					&.hide-overlay {
+						display: none;
+					}
+				}
+				.icon-shadow-container {
+					width: 11rem;
+					height: 9rem;
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					z-index: 5;
+					&:hover {
+						.icon {
+							&.isPlayed {
+								display: flex;
+							}
+						}
+					}
+
+					.icon {
+						width: 4rem;
+						height: 4rem;
+						border-radius: 50%;
+						background-color: rgba(255, 255, 255, 0.2);
+						mix-blend-mode: normal;
+						backdrop-filter: blur(5px);
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						cursor: pointer;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						transition: all ease-in-out 0.2s;
+						&::after {
+							content: url("/img/play.svg");
+							position: absolute;
+							left: 52%;
+							top: 56%;
+							transform: translate(-50%, -50%);
+						}
+						&.isPlayed {
+							&::after {
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%, -50%);
+							}
+						}
+
+						&:hover {
+							border: solid 1px #fff;
+						}
+
+						&.isPlayed {
+							&::after {
+								content: url("/img/close.svg");
+								transform: scale(0.8) translate(-63%, -50%);
+							}
+
+							display: none;
+						}
+					}
+				}
+			}
+			.card-container {
+				margin-bottom: 2.5rem;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.info-card {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					// background: rgba(42, 50, 56, 0.24);
+					background: white;
+					border-radius: 1.875rem;
+					width: 80%;
+					height: 11.5rem;
+					padding: 1rem;
+					.info {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding-bottom: 1rem;
+						.icon-container {
+							width: 2.5rem;
+							height: 2.5rem;
+							margin-inline-end: 1rem;
+							background: #934d11;
+							border-radius: 50%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							color: #934d11;
+						}
+						.card-text {
+							// color: #ffffff;
+							font-weight: 500;
+							color: #934d11;
+						}
+					}
+				}
+			}
+			.rating-container {
+				margin-bottom: 2.5rem;
+				.rating-label {
+					color: white;
+					font-size: 1.125rem;
+				}
+				.icon {
+					margin-inline-start: 0.25rem;
+				}
+			}
+
+			.tags-container {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+				margin-bottom: 2.5rem;
+				justify-content: center;
+				align-items: center;
+				.single-tags {
+					display: flex;
+					flex-direction: row;
+					gap: 0.5rem;
+				}
+				.tag-label {
+					color: white;
+					font-size: 1.125rem;
+				}
+				.tag {
+					font-family: "somatic-rounded";
+					color: #ffffff;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+					background: rgba(255, 255, 255, 0.24);
+					border-radius: 1.875rem;
+					cursor: pointer;
+					transition: 0.5s all ease-in-out;
+					&:hover {
+						background-color: white;
+						color: #046a38;
+					}
+				}
+			}
+			.share-container {
+				margin-bottom: 1.5rem;
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				align-items: center;
+				.icon-container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: white;
+					width: 2.5rem;
+					height: 2.5rem;
+					border-radius: 50%;
+					border: 1px solid rgba($color: white, $alpha: 0.1);
+					transition: 0.5s all ease-in-out;
+					&:hover {
+						background-color: white;
+						color: #046a38;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+	.recipe-detail-overview-section .lyr .insideLyr .video-container {
+		height: 30rem;
+	}
+	.recipe-detail-overview-section .lyr .card-container {
+		width: 70%;
+	}
+}
+@media (min-width: 1025px) {
+	.recipe-detail-overview-section {
+		padding-top: 0;
+		padding-bottom: 0;
+		height: calc(100vh - 120px);
+		overflow: hidden;
+		.lyr {
+			height: 100%;
+			overflow: hidden;
+			.insideLyr {
+				flex-direction: row;
+				padding-inline-start: unset;
+				padding-inline-end: unset;
+				padding-top: 1rem;
+				justify-content: flex-end;
+
+				a {
+					padding-bottom: 0rem;
+				}
+				.card-container {
+					width: unset;
+					justify-content: flex-start;
+					.info-card {
+						flex-direction: row;
+						background: white;
+						border-radius: 3.75rem;
+						width: 36.2rem;
+						height: unset;
+						gap: 1.5rem;
+						padding: 1rem 1.5rem;
+
+						.info {
+							display: flex;
+							justify-content: flex-start;
+							padding-bottom: 0rem;
+							.icon-container {
+								width: 2.5rem;
+								height: 2.5rem;
+								margin-inline-end: 1rem;
+								background: #934d11;
+								border-radius: 50%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								color: #934d11;
+							}
+							.card-text {
+								font-weight: 500;
+								color: #934d11;
+							}
+						}
+					}
+				}
+				.overview-header {
+					text-align: start;
+					padding-inline-start: unset;
+					padding-inline-end: unset;
+					min-height: unset;
+					h1 {
+						text-align: start;
+						font-size: 3.25rem;
+						width: 100%;
+					}
+				}
+				.lyr-header {
+					z-index: 1;
+					padding: 0;
+					width: 50%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+					left: 5%;
+					// top: 8.5%;
+					span {
+						position: relative;
+						left: 15%;
+						top: -8%;
+					}
+					.video-container {
+						margin-bottom: 0rem;
+						padding-top: 0rem;
+						width: 35rem;
+						height: 27rem;
+						border-radius: 1.875rem;
+						// padding-inline-start: unset;
+						// padding-inline-end: unset;
+						.header-icons-container {
+							top: 1rem;
+							left: -14rem;
+							.icon-container {
+								.icon {
+									height: 2.75rem;
+									width: 2.75rem;
+								}
+							}
+						}
+						video {
+							border-radius: 1.875rem;
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							position: relative;
+							object-position: top;
+						}
+						img {
+							border-radius: 1.875rem;
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							object-position: top;
+						}
+					}
+				}
+				.lyr-container {
+					height: 100%;
+					padding-inline-end: 6%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					// align-items: center;
+					background: #046a38;
+					border-top-left-radius: 10rem;
+					padding-inline-start: 12%;
+					padding-top: 3%;
+					// padding-bottom: 6%;
+
+					.tags-container {
+						justify-content: flex-start;
+						flex-direction: row;
+					}
+					.share-container {
+						justify-content: flex-start;
+						margin-bottom: 2.5rem;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+:lang(ar) {
+    direction: rtl;
+    .round-btn-container{
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #E02626;
+    margin: 1rem auto;
+    .btn-text{
+    text-align: center;
+    }
+    &:after{
+    content: '';
+    width: 8.5rem;
+    position: absolute;
+    border-top: 1px solid black;
+    transform: rotate(45deg);
+    z-index: -1;
+    }
+    &.dark{
+    &:after{
+    content: '';
+    width: 8.5rem;
+    position: absolute; 
+    border-top: 1px solid white;
+    transform: rotate(45deg);
+    z-index: -1;
+    }
+    }
+    }
+}
